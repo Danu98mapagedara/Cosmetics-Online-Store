@@ -1,0 +1,97 @@
+.con-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 40px 20px;
+    background-image: url('../../assets/images/contactus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+   padding-top: 150px;
+    
+}
+
+.con-left {
+    width: 40%;
+    padding: 30px;
+  color: rgb(80, 31, 31);
+  font-weight: 800;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.con-right {
+    width: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row input,
+.form-row textarea {
+    width: 80%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #f9f9f9;
+    transition: 0.3s;
+}
+
+.form-row input:focus,
+.form-row textarea:focus {
+    border-color: #007bff;
+   border: 5px solid;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+    display: block;
+}
+
+.con-btn {
+    width: 25%;
+    padding: 8px;
+    background: #c684c6;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.con-btn:hover {
+    background: #b30077;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .con-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .con-left, .con-right {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .form-row input,
+    .form-row textarea {
+        width: 100%;
+    }
+}

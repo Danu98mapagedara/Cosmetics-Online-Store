@@ -1,0 +1,59 @@
+.home-slider {
+width: 80%;
+  margin: 40px auto;
+  padding: 20px 80px;
+  background-color: #ffe4ec; 
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(255, 192, 203, 0.3);
+}
+
+.slider-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 10px;
+}
+
+.slider-content {
+  text-align: center;
+  max-width: 600px;
+  background-color: #fff0f5; 
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+}
+
+.slider-rating {
+  font-size: 24px;
+  color: #ff69b4; /* Hot pink stars */
+  margin-bottom: 10px;
+}
+
+.slider-title {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d63384;
+  margin-bottom: 10px;
+}
+
+.slider-description {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Swiper overrides (optional styling) */
+.swiper-pagination-bullet {
+  background-color: #ff69b4;
+  opacity: 0.6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #d63384;
+  opacity: 1;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #d63384;
+}

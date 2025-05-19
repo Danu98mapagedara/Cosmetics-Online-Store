@@ -1,0 +1,76 @@
+/* card.css */
+
+.singleProduct {
+  
+  width: 300px;
+ justify-content: center;
+ align-items: center;
+  box-shadow: 0 2px 8px rgba(151, 212, 77, 0.1);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+
+.card img{
+  width: 100%;
+  max-width: 300px;
+  height: 200px;
+  object-fit:contain;
+  margin-bottom: 10px;
+   background-color: #d2e6d8;
+   padding: 30px;
+}
+
+.card p {
+  margin: 4px 0;
+}
+
+
+.view-btn{
+ padding: 12px 24px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #28a745;
+  color: #28a745;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  width: 80%;
+
+}
+.view-btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #d8a0d8;
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+.view-btn:hover{
+  color: rgb(222, 214, 214);
+}
+.view-btn:hover::before{
+  width: 100%;
+}
+.clear-button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.clear-button:hover {
+  background-color: #c82333;
+}

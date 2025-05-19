@@ -1,0 +1,106 @@
+.productpage {
+  font-family: Arial, sans-serif;
+  position: relative;
+  padding: 20px;
+  background: #fff;
+  color: #333;
+}
+
+.banner-msg {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.productpage-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 100px;
+  margin-top: 20px;
+}
+
+.product-image img {
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.product-details {
+  max-width: 600px;
+}
+
+.product-details h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+
+    color: #333;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  color: green;
+  margin-bottom: 10px;
+}
+
+.description, .ingredients {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.add-to-cart {
+  padding: 12px 24px;
+  font-size: 16px;
+  background: transparent;
+  border: 2px solid #28a745;
+  color: #28a745;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease;
+  cursor: pointer;
+  width: 80%;
+}
+
+.add-to-cart::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0;
+  background: #28a745;
+  z-index: -1;
+  transition: width 0.5s ease;
+}
+
+.add-to-cart:hover {
+  color: rgb(222, 214, 214);
+}
+
+.add-to-cart:hover::before {
+  width: 100%;
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  background-color: #1ebc59;
+}
